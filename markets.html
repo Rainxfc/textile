@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Export Markets | Prestige Textiles</title>
+  <meta name="description" content="Prestige Textiles exports premium textile products from Pakistan to Australia, New Zealand, UK, Europe, UAE, and beyond. Door-to-door shipping solutions available.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .map-container-lg { position:relative; max-width:1000px; margin:0 auto; padding:40px 0; }
+    .map-svg { width:100%; height:auto; filter:drop-shadow(0 10px 20px rgba(13,27,62,0.1)); }
+    .map-region { fill:var(--grey-200); transition:all 0.3s ease; cursor:pointer; }
+    .map-region.active { fill:var(--navy-800); }
+    .map-region:hover { fill:var(--gold-500); }
+    .map-tooltip { position:absolute; background:var(--white); padding:16px 20px; border-radius:var(--radius-lg); box-shadow:var(--shadow-xl); border-left:4px solid var(--gold-500); display:none; pointer-events:none; z-index:10; width:max-content; max-width:250px; }
+    .map-tooltip h4 { color:var(--navy-800); margin-bottom:4px; font-size:1.1rem; }
+    .map-tooltip p { font-size:0.85rem; color:var(--text-light); }
+    
+    .logistics-card { background:var(--white); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-md); border-top:4px solid var(--gold-500); height:100%; }
+    .logistics-icon { font-size:2.5rem; margin-bottom:20px; }
+    .logistics-card h3 { font-size:1.2rem; color:var(--navy-800); margin-bottom:12px; }
+    .logistics-card p { font-size:0.9rem; color:var(--text-light); line-height:1.6; margin-bottom:16px; }
+    .logistics-card ul { list-style:none; padding:0; margin:0; }
+    .logistics-card ul li { font-size:0.85rem; color:var(--navy-700); margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+    .logistics-card ul li::before { content:'✓'; color:var(--gold-500); font-weight:bold; }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><div class="top-bar-item">📞 +92 300 000 0000</div><div class="top-bar-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="top-bar-item">📍 Faisalabad, Pakistan</div></div><div class="top-bar-right"><div class="top-bar-social"><a href="#">in</a><a href="#">f</a></div></div></div></div></div>
+<nav class="navbar" id="navbar"><div class="container"><div class="navbar-inner"><a href="index.html" class="navbar-logo"><div class="navbar-logo-mark">PT</div><div class="navbar-logo-text"><span class="brand-name">Prestige Textiles</span><span class="brand-sub">Faisalabad, Pakistan</span></div></a><nav class="navbar-nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="products.html" class="nav-link">Products</a><a href="services.html" class="nav-link">Services</a><a href="industries.html" class="nav-link">Industries</a><a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality.html" class="nav-link">Quality</a><a href="markets.html" class="nav-link active">Markets</a><a href="blog.html" class="nav-link">Blog</a><a href="contact.html" class="nav-link">Contact</a></nav><div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></div></div></nav>
+<div class="mobile-menu" id="mobile-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="markets.html" class="nav-link">Markets</a><a href="contact.html" class="nav-link">Contact</a><a href="contact.html" class="btn btn-primary" style="margin-top:24px;display:flex;justify-content:center;">Get a Quote</a></div>
+
+<section class="page-hero"><div class="container"><div class="page-hero-content"><nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span style="color:rgba(255,255,255,0.8);">Markets</span></nav><span class="eyebrow">Global Reach</span><h1 class="display-lg">Exporting Excellence Worldwide</h1><p>From Faisalabad to the world. We export premium textiles to leading brands, hotel chains, and importers across 20+ countries.</p></div></div></section>
+
+<section class="section bg-white" id="interactive-map">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Presence</span>
+      <h2 class="display-md">Interactive Export Map</h2>
+      <div class="section-divider"></div>
+      <p>Hover or tap on highlighted regions to see our key markets and typical shipping transit times from Pakistan.</p>
+    </div>
+    
+    <div class="map-container-lg reveal">
+      <div id="map-tooltip" class="map-tooltip">
+        <h4 id="tooltip-title">Region</h4>
+        <p id="tooltip-desc">Description</p>
+      </div>
+      <svg viewBox="0 0 1000 500" class="map-svg" id="world-map">
+        <!-- Simplified World Map SVG for demonstration -->
+        <!-- North America -->
+        <path d="M100,100 Q150,50 250,80 T300,150 Q200,200 150,150 Z" class="map-region" data-region="north-america" data-title="North America" data-desc="Key markets: USA & Canada. Transit time: 25-35 days via sea." />
+        <!-- South America -->
+        <path d="M250,250 Q300,200 350,300 T280,450 Q200,350 250,250 Z" class="map-region" />
+        <!-- Europe -->
+        <path d="M450,80 Q550,50 600,100 T500,180 Q400,150 450,80 Z" class="map-region active" data-region="europe" data-title="UK & Europe" data-desc="Duty-free access via GSP+. Major markets: UK, Germany, Spain, Italy. Transit: 20-28 days." />
+        <!-- Africa -->
+        <path d="M480,220 Q580,200 600,300 T520,400 Q450,300 480,220 Z" class="map-region" />
+        <!-- Asia (Pakistan highlighted roughly) -->
+        <path d="M650,50 Q800,50 850,150 T750,250 Q600,200 650,50 Z" fill="#e0e0e0" />
+        <circle cx="700" cy="180" r="10" fill="#C9A84C" stroke="#fff" stroke-width="2" />
+        <text x="700" y="210" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B3E">Pakistan (HQ)</text>
+        <!-- Middle East -->
+        <path d="M580,180 Q620,160 650,200 T600,240 Z" class="map-region active" data-region="middle-east" data-title="Middle East (UAE)" data-desc="Major hospitality linen market (Dubai, Abu Dhabi, Saudi Arabia). Transit: 5-8 days via sea." />
+        <!-- Australia / NZ -->
+        <path d="M800,350 Q900,300 950,380 T850,450 Q750,400 800,350 Z" class="map-region active" data-region="oceania" data-title="Australia & New Zealand" data-desc="Strong demand for home textiles and hospitality linen. Transit: 22-30 days via sea." />
+      </svg>
+    </div>
+    
+    <div class="grid-4" style="margin-top:40px; gap:16px;">
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇦🇺 Australia</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇬🇧 United Kingdom</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇩🇪 Germany</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇦🇪 UAE</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇳🇿 New Zealand</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇪🇸 Spain</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇮🇹 Italy</div>
+      <div class="market-badge" style="background:var(--off-white); padding:16px; border-radius:var(--radius-md); text-align:center; font-weight:600; color:var(--navy-800); border:1px solid var(--grey-200);">🇸🇦 Saudi Arabia</div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-off-white">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Logistics & Shipping</span>
+      <h2 class="display-md">Seamless Door-to-Door Delivery</h2>
+      <div class="section-divider"></div>
+      <p>We take the complexity out of international trade by offering complete logistics solutions, from factory floor to your warehouse.</p>
+    </div>
+    
+    <div class="grid-3" style="gap:30px;">
+      <div class="logistics-card reveal">
+        <div class="logistics-icon">🚢</div>
+        <h3>Sea Freight (FCL & LCL)</h3>
+        <p>Cost-effective shipping for bulk orders. We load Full Container Loads (FCL) directly at the factory, or manage Less than Container Loads (LCL) through consolidated shipments from Karachi port.</p>
+        <ul>
+          <li>20ft & 40ft HQ Containers</li>
+          <li>Competitive freight rates</li>
+          <li>Secure loading and sealing</li>
+        </ul>
+      </div>
+      
+      <div class="logistics-card reveal reveal-delay-2">
+        <div class="logistics-icon">✈️</div>
+        <h3>Air Freight & Courier</h3>
+        <p>Rapid delivery for urgent orders, seasonal collections, or physical samples. We partner with leading international couriers (DHL, FedEx) and air freight forwarders via Lahore or Islamabad airports.</p>
+        <ul>
+          <li>3-5 day delivery for samples</li>
+          <li>7-10 day commercial air freight</li>
+          <li>Real-time tracking</li>
+        </ul>
+      </div>
+      
+      <div class="logistics-card reveal reveal-delay-4">
+        <div class="logistics-icon">📋</div>
+        <h3>Export Documentation</h3>
+        <p>Our experienced export department handles all necessary paperwork to ensure smooth customs clearance at your destination port, minimizing delays and avoiding demurrage charges.</p>
+        <ul>
+          <li>Bill of Lading / Airway Bill</li>
+          <li>Certificate of Origin</li>
+          <li>GSP Form A (for EU/UK duty benefits)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner"><div class="container"><div class="cta-banner-inner reveal"><h2 class="display-md">Get a CIF or DDP Quote</h2><p>We can quote prices inclusive of shipping to your destination port (CIF) or directly to your door (DDP).</p><div class="btn-group"><a href="contact.html" class="btn btn-primary btn-lg">📋 Request a Quote</a></div></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">PT</div><div><span class="footer-brand-name">Prestige Textiles</span><span class="footer-brand-sub">Faisalabad, Pakistan</span></div></div><p>Your trusted textile sourcing and manufacturing partner.</p><div class="footer-contact-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div></div></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><p>© 2026 Prestige Textiles. All rights reserved.</p></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

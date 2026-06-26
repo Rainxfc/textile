@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Prestige Textiles | Pakistan Textile Sourcing & Manufacturing Partner</title>
+  <meta name="description" content="Learn about Prestige Textiles — a Faisalabad-based textile sourcing and manufacturing company serving global buyers in Australia, UK, Europe, and UAE with premium quality textiles.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .timeline { position: relative; padding-left: 40px; }
+    .timeline::before { content:''; position:absolute; left:12px; top:0; bottom:0; width:2px; background:linear-gradient(180deg,var(--gold-500),var(--gold-300)); }
+    .timeline-item { position:relative; margin-bottom:40px; }
+    .timeline-dot { position:absolute; left:-34px; top:4px; width:14px; height:14px; background:var(--gold-500); border-radius:50%; border:3px solid var(--white); box-shadow:0 0 0 3px var(--gold-300); }
+    .timeline-year { font-size:0.75rem; font-weight:700; letter-spacing:0.1em; color:var(--gold-500); text-transform:uppercase; margin-bottom:6px; }
+    .timeline-item h4 { font-size:1rem; font-weight:700; color:var(--navy-800); margin-bottom:6px; }
+    .timeline-item p { font-size:0.875rem; color:var(--text-light); line-height:1.6; }
+    .team-card { background:var(--white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); transition:all var(--transition-base); }
+    .team-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-xl); }
+    .team-avatar { height:200px; background:linear-gradient(135deg,var(--navy-800),var(--navy-600)); display:flex; align-items:center; justify-content:center; font-size:4rem; color:var(--gold-300); }
+    .team-body { padding:24px; text-align:center; }
+    .team-name { font-size:1.05rem; font-weight:700; color:var(--navy-800); margin-bottom:4px; }
+    .team-role { font-size:0.82rem; color:var(--gold-500); font-weight:600; margin-bottom:10px; }
+    .team-bio { font-size:0.85rem; color:var(--text-light); line-height:1.6; }
+    .value-big-card { background:var(--white); border-radius:var(--radius-lg); padding:36px 28px; border-left:4px solid var(--gold-500); box-shadow:var(--shadow-sm); transition:all var(--transition-base); }
+    .value-big-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-4px); }
+    .value-big-card h3 { font-size:1.1rem; font-weight:700; color:var(--navy-800); margin-bottom:10px; }
+    .value-big-card p { font-size:0.88rem; color:var(--text-light); line-height:1.6; }
+    .value-number { font-family:var(--font-serif); font-size:3rem; font-weight:700; color:var(--grey-200); line-height:1; margin-bottom:12px; }
+    .pakistan-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .pakistan-fact { background:var(--white); border-radius:var(--radius-lg); padding:28px; display:flex; gap:16px; align-items:flex-start; box-shadow:var(--shadow-sm); }
+    .pakistan-fact-icon { font-size:2rem; flex-shrink:0; }
+    .pakistan-fact h4 { font-size:0.95rem; font-weight:700; color:var(--navy-800); margin-bottom:6px; }
+    .pakistan-fact p { font-size:0.84rem; color:var(--text-light); line-height:1.5; }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">📞 +92 300 000 0000</div>
+        <div class="top-bar-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div>
+        <div class="top-bar-item">📍 Faisalabad, Pakistan</div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">●</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-mark">PT</div>
+        <div class="navbar-logo-text">
+          <span class="brand-name">Prestige Textiles</span>
+          <span class="brand-sub">Faisalabad, Pakistan</span>
+        </div>
+      </a>
+      <nav class="navbar-nav">
+        <a href="index.html" class="nav-link" data-page="index.html">Home</a>
+        <a href="about.html" class="nav-link" data-page="about.html">About</a>
+        <a href="products.html" class="nav-link" data-page="products.html">Products</a>
+        <a href="services.html" class="nav-link" data-page="services.html">Services</a>
+        <a href="industries.html" class="nav-link" data-page="industries.html">Industries</a>
+        <a href="manufacturing.html" class="nav-link" data-page="manufacturing.html">Manufacturing</a>
+        <a href="quality.html" class="nav-link" data-page="quality.html">Quality</a>
+        <a href="markets.html" class="nav-link" data-page="markets.html">Markets</a>
+        <a href="blog.html" class="nav-link" data-page="blog.html">Blog</a>
+        <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+      </nav>
+      <div class="navbar-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+        <button class="hamburger" aria-label="Menu" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About Us</a>
+  <a href="products.html" class="nav-link">Products</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="industries.html" class="nav-link">Industries</a>
+  <a href="manufacturing.html" class="nav-link">Manufacturing</a>
+  <a href="quality.html" class="nav-link">Quality</a>
+  <a href="markets.html" class="nav-link">Markets</a>
+  <a href="blog.html" class="nav-link">Blog</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:24px; display:flex; justify-content:center;">Request a Quote</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span style="color:rgba(255,255,255,0.8);">About Us</span>
+      </nav>
+      <span class="eyebrow">Our Story</span>
+      <h1 class="display-lg">About Prestige Textiles</h1>
+      <p>A trusted textile sourcing and manufacturing partner, built on decades of industry knowledge and a relentless commitment to quality.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Vision Values -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="grid-3">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎯</div>
+        <h4>Our Mission</h4>
+        <p>To be the most trusted textile sourcing and manufacturing partner for global buyers — delivering consistently premium quality, competitive pricing, and reliable supply chains from Pakistan to the world.</p>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon">🌍</div>
+        <h4>Our Vision</h4>
+        <p>To position Pakistan's textile industry as the preferred global sourcing destination, and to grow Prestige Textiles into a leading B2B textile platform connecting the world's buyers with Pakistan's manufacturers.</p>
+      </div>
+      <div class="cert-card reveal reveal-delay-4">
+        <div class="cert-icon">⭐</div>
+        <h4>Our Promise</h4>
+        <p>Every shipment we handle carries our commitment: the right product, at the right quality, at the right time. We don't just process orders — we build long-term business relationships built on trust and transparency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Split -->
+<section class="section bg-off-white">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+      <div class="reveal-left">
+        <span class="eyebrow">Who We Are</span>
+        <h2 class="display-md" style="margin:12px 0 20px;">Your Reliable Textile Partner in Faisalabad</h2>
+        <p class="body-md" style="color:var(--text-light); margin-bottom:20px;">Located in Faisalabad — the textile capital of Pakistan — Prestige Textiles connects international buyers with a carefully curated network of trusted manufacturing partners. We offer end-to-end sourcing, production oversight, quality control, packaging, and export solutions.</p>
+        <p class="body-md" style="color:var(--text-light); margin-bottom:28px;">Unlike simple trading companies, we act as an extension of your procurement team. We understand your product requirements, find the right manufacturer, manage production timelines, enforce quality standards, and ensure your goods arrive exactly as ordered.</p>
+        <div class="checklist">
+          <div class="checklist-item"><div class="check-icon">✓</div>15+ trusted manufacturing partners across Faisalabad</div>
+          <div class="checklist-item"><div class="check-icon">✓</div>End-to-end export management from factory to port</div>
+          <div class="checklist-item"><div class="check-icon">✓</div>Dedicated account managers for each client</div>
+          <div class="checklist-item"><div class="check-icon">✓</div>Bilingual team (English, Urdu) for seamless communication</div>
+          <div class="checklist-item"><div class="check-icon">✓</div>Transparent pricing with no hidden fees</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div style="border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-xl); aspect-ratio:4/3; background:var(--grey-100);">
+          <img src="images/about_factory.png" alt="Prestige Textiles factory" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Values</span>
+      <h2 class="display-md">What Guides Everything We Do</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="grid-3" style="gap:20px;">
+      <div class="value-big-card reveal">
+        <div class="value-number">01</div>
+        <h3>Quality First</h3>
+        <p>We never compromise on quality. Every product is inspected at multiple stages — from raw material selection to final packing — to ensure it meets international standards.</p>
+      </div>
+      <div class="value-big-card reveal reveal-delay-1">
+        <div class="value-number">02</div>
+        <h3>Integrity in Business</h3>
+        <p>We operate with complete transparency. Honest pricing, honest timelines, and honest communication — even when things don't go perfectly.</p>
+      </div>
+      <div class="value-big-card reveal reveal-delay-2">
+        <div class="value-number">03</div>
+        <h3>Innovation</h3>
+        <p>We continually explore new materials, manufacturing techniques, and product categories to keep our clients ahead of market trends.</p>
+      </div>
+      <div class="value-big-card reveal reveal-delay-3">
+        <div class="value-number">04</div>
+        <h3>Customer Satisfaction</h3>
+        <p>Our clients' success is our success. We measure ourselves by repeat business, long-term relationships, and referrals — not just completed transactions.</p>
+      </div>
+      <div class="value-big-card reveal reveal-delay-4">
+        <div class="value-number">05</div>
+        <h3>Reliability</h3>
+        <p>Consistent, predictable performance. Our 98% on-time delivery rate is the result of meticulous production planning and proactive communication.</p>
+      </div>
+      <div class="value-big-card reveal reveal-delay-5">
+        <div class="value-number">06</div>
+        <h3>Continuous Improvement</h3>
+        <p>We actively gather feedback from our buyers and manufacturing partners to continuously improve our processes, products, and services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Pakistan / Faisalabad -->
+<section class="section bg-navy" id="why-pakistan">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow" style="color:var(--gold-300)">Our Location Advantage</span>
+      <h2 class="display-md text-white">Why Pakistan? Why Faisalabad?</h2>
+      <div class="section-divider"></div>
+      <p style="color:rgba(255,255,255,0.65);">Pakistan's textile industry is one of the largest in the world. Here's why smart global buyers choose to source from here.</p>
+    </div>
+    <div class="pakistan-grid reveal">
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">🏭</div>
+        <div>
+          <h4>World's 4th Largest Cotton Producer</h4>
+          <p>Pakistan produces over 8 million bales of cotton annually, giving manufacturers access to high-quality raw materials at competitive costs.</p>
+        </div>
+      </div>
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">💰</div>
+        <div>
+          <h4>$19+ Billion Annual Textile Exports</h4>
+          <p>Pakistan is one of the world's top 10 textile exporters, with established supply chains and deep manufacturing expertise.</p>
+        </div>
+      </div>
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">🏙️</div>
+        <div>
+          <h4>Faisalabad — The Manchester of the East</h4>
+          <p>Over 60% of Pakistan's textile production is concentrated in Faisalabad, with thousands of specialized factories covering every category.</p>
+        </div>
+      </div>
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">🤝</div>
+        <div>
+          <h4>GSP+ Trade Preferences</h4>
+          <p>Pakistan benefits from EU GSP+ status, providing duty-free access to European markets and making Pakistani textiles highly competitive.</p>
+        </div>
+      </div>
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">⚙️</div>
+        <div>
+          <h4>Vertically Integrated Manufacturing</h4>
+          <p>Pakistan's textile sector covers the full supply chain — from cotton growing and spinning to weaving, dyeing, stitching, and finishing.</p>
+        </div>
+      </div>
+      <div class="pakistan-fact">
+        <div class="pakistan-fact-icon">🌍</div>
+        <div>
+          <h4>Established Export Infrastructure</h4>
+          <p>Well-connected ports (Karachi, Qasim), bonded warehouses, experienced freight forwarders, and streamlined export documentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company Timeline -->
+<section class="section bg-off-white">
+  <div class="container container-lg">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Journey</span>
+      <h2 class="display-md">Our Growth Story</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Foundation</div>
+          <h4>Prestige Textiles Established</h4>
+          <p>Founded in Faisalabad with a clear vision: to bridge the gap between international buyers and Pakistan's world-class textile manufacturers with professional, reliable service.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Early Growth</div>
+          <h4>First International Export Clients</h4>
+          <p>Onboarded our first Australian and UK retail clients. Established our network of manufacturing partners across the Faisalabad textile district.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Expansion</div>
+          <h4>Expanded to Hotel & Hospitality Sector</h4>
+          <p>Developed specialised linen programmes for hotels and hospitality chains across the UAE and GCC region. Grew manufacturing partner network to 15+ factories.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Quality Milestone</div>
+          <h4>ISO-Compliant Quality Systems Implemented</h4>
+          <p>Introduced AQL-based inspection protocols across all partner factories. Launched private label and OEM manufacturing services for retail brands.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Today</div>
+          <h4>20+ Countries, 500+ Products</h4>
+          <p>Prestige Textiles now serves buyers across 20+ countries with 500+ developed products, a 98% on-time delivery record, and a growing digital presence to support our global growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <h2 class="display-md">Start Your Sourcing Journey</h2>
+      <p>Tell us what you need and we'll connect you with the right manufacturing solution.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary btn-lg">📋 Request a Quotation</a>
+        <a href="https://wa.me/923000000000" class="btn btn-outline btn-lg" target="_blank">📞 WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-mark">PT</div>
+            <div><span class="footer-brand-name">Prestige Textiles</span><span class="footer-brand-sub">Faisalabad, Pakistan</span></div>
+          </div>
+          <p>Your trusted textile sourcing and manufacturing partner, delivering premium quality from Pakistan to the world.</p>
+          <div class="footer-contact-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div>
+          <div class="footer-contact-item">📞 +92 300 000 0000</div>
+          <div class="footer-contact-item">📍 Faisalabad, Punjab, Pakistan</div>
+        </div>
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="products.html">Home Textiles</a></li>
+            <li><a href="products.html#garments">Garments</a></li>
+            <li><a href="products.html#hotel-linen">Hotel Linen</a></li>
+            <li><a href="products.html#private-label">Private Label</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p style="font-size:0.85rem;">Stay updated with textile industry insights from Pakistan.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>© 2026 Prestige Textiles. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <div class="whatsapp-pulse"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<button class="back-to-top" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

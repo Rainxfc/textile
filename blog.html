@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights | Prestige Textiles</title>
+  <meta name="description" content="Read the latest insights, textile industry news, manufacturing trends, and sourcing advice from the team at Prestige Textiles in Pakistan.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blog-grid-page { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:40px; }
+    .blog-card { background:var(--white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-sm); transition:all var(--transition-base); display:flex; flex-direction:column; height:100%; border:1px solid var(--grey-100); }
+    .blog-card:hover { transform:translateY(-8px); box-shadow:var(--shadow-xl); }
+    .blog-card-img { width:100%; aspect-ratio:16/9; background:var(--grey-100); position:relative; overflow:hidden; }
+    .blog-card-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
+    .blog-card:hover .blog-card-img img { transform:scale(1.05); }
+    .blog-category { position:absolute; top:16px; left:16px; background:var(--gold-500); color:var(--white); font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:var(--radius-full); text-transform:uppercase; letter-spacing:0.05em; z-index:2; }
+    .blog-card-body { padding:24px; display:flex; flex-direction:column; flex-grow:1; }
+    .blog-meta { font-size:0.85rem; color:var(--text-light); margin-bottom:12px; display:flex; align-items:center; gap:12px; }
+    .blog-title { font-size:1.3rem; color:var(--navy-800); margin-bottom:12px; line-height:1.4; }
+    .blog-title a { color:inherit; text-decoration:none; }
+    .blog-title a:hover { color:var(--gold-600); }
+    .blog-excerpt { font-size:0.95rem; color:var(--text-light); line-height:1.6; margin-bottom:24px; flex-grow:1; }
+    .blog-read-more { font-weight:700; color:var(--navy-800); font-size:0.9rem; text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:color var(--transition-base); }
+    .blog-read-more:hover { color:var(--gold-600); }
+    .pagination { display:flex; justify-content:center; gap:8px; margin-top:60px; }
+    .page-num { width:40px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:var(--radius-md); font-weight:600; color:var(--navy-800); background:var(--white); border:1px solid var(--grey-200); text-decoration:none; transition:all var(--transition-base); }
+    .page-num:hover, .page-num.active { background:var(--navy-800); color:var(--white); border-color:var(--navy-800); }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><div class="top-bar-item">📞 +92 300 000 0000</div><div class="top-bar-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="top-bar-item">📍 Faisalabad, Pakistan</div></div><div class="top-bar-right"><div class="top-bar-social"><a href="#">in</a><a href="#">f</a></div></div></div></div></div>
+<nav class="navbar" id="navbar"><div class="container"><div class="navbar-inner"><a href="index.html" class="navbar-logo"><div class="navbar-logo-mark">PT</div><div class="navbar-logo-text"><span class="brand-name">Prestige Textiles</span><span class="brand-sub">Faisalabad, Pakistan</span></div></a><nav class="navbar-nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="products.html" class="nav-link">Products</a><a href="services.html" class="nav-link">Services</a><a href="industries.html" class="nav-link">Industries</a><a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality.html" class="nav-link">Quality</a><a href="markets.html" class="nav-link">Markets</a><a href="blog.html" class="nav-link active">Blog</a><a href="contact.html" class="nav-link">Contact</a></nav><div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></div></div></nav>
+<div class="mobile-menu" id="mobile-menu"><a href="index.html" class="nav-link">Home</a><a href="blog.html" class="nav-link">Blog</a><a href="contact.html" class="nav-link">Contact</a><a href="contact.html" class="btn btn-primary" style="margin-top:24px;display:flex;justify-content:center;">Get a Quote</a></div>
+
+<section class="page-hero"><div class="container"><div class="page-hero-content"><nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span style="color:rgba(255,255,255,0.8);">Blog</span></nav><span class="eyebrow">Insights & News</span><h1 class="display-lg">Textile Industry Insights</h1><p>Stay updated with the latest trends, manufacturing advice, and updates from the Pakistan textile sector.</p></div></div></section>
+
+<section class="section bg-off-white">
+  <div class="container">
+    <div class="blog-grid-page">
+      
+      <!-- Article 1 -->
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <span class="blog-category">Sourcing Guide</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:var(--white);">📦</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>May 15, 2026</span><span>•</span><span>5 min read</span></div>
+          <h2 class="blog-title"><a href="#">Why Pakistan is the Ideal Sourcing Destination for Home Textiles in 2026</a></h2>
+          <p class="blog-excerpt">An in-depth look at how currency dynamics, GSP+ status, and vertical integration are making Pakistan the most competitive market for home textiles.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card reveal reveal-delay-1">
+        <div class="blog-card-img">
+          <span class="blog-category">Quality Control</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,var(--gold-500),var(--gold-400));color:var(--white);">🔍</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>April 28, 2026</span><span>•</span><span>4 min read</span></div>
+          <h2 class="blog-title"><a href="#">Understanding AQL Standards in Textile Manufacturing</a></h2>
+          <p class="blog-excerpt">Confused by AQL 1.5 vs 2.5? We break down what Acceptable Quality Limits mean and how to choose the right inspection standard for your brand.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card reveal reveal-delay-2">
+        <div class="blog-card-img">
+          <span class="blog-category">Sustainability</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#2e7d32,#4caf50);color:var(--white);">🌿</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>April 10, 2026</span><span>•</span><span>6 min read</span></div>
+          <h2 class="blog-title"><a href="#">The Rise of Organic Cotton and Sustainable Dyeing</a></h2>
+          <p class="blog-excerpt">How Faisalabad's manufacturing sector is adapting to global demands for sustainable, eco-friendly textile production and certifications.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+      
+      <!-- Article 4 -->
+      <article class="blog-card reveal">
+        <div class="blog-card-img">
+          <span class="blog-category">Logistics</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#0277bd,#03a9f4);color:var(--white);">🚢</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>March 22, 2026</span><span>•</span><span>4 min read</span></div>
+          <h2 class="blog-title"><a href="#">FCL vs LCL Shipping: Which is Right for Your Business?</a></h2>
+          <p class="blog-excerpt">A comprehensive guide on managing your supply chain costs by choosing the right container shipping method for your textile imports.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+      
+      <!-- Article 5 -->
+      <article class="blog-card reveal reveal-delay-1">
+        <div class="blog-card-img">
+          <span class="blog-category">Product Focus</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#6a1b9a,#9c27b0);color:var(--white);">🏨</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>March 05, 2026</span><span>•</span><span>5 min read</span></div>
+          <h2 class="blog-title"><a href="#">Specifying Hotel Linen: Thread Count Myths Busted</a></h2>
+          <p class="blog-excerpt">Why higher thread count doesn't always mean better durability in commercial hospitality environments. What procurement managers need to know.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+      
+      <!-- Article 6 -->
+      <article class="blog-card reveal reveal-delay-2">
+        <div class="blog-card-img">
+          <span class="blog-category">Company News</span>
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#f57f17,#fbc02d);color:var(--white);">🤝</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span>February 18, 2026</span><span>•</span><span>3 min read</span></div>
+          <h2 class="blog-title"><a href="#">Prestige Textiles Expands Partner Factory Network</a></h2>
+          <p class="blog-excerpt">We are proud to announce the addition of three new specialized garment manufacturing facilities to our verified partner network in Faisalabad.</p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+    
+    <div class="pagination reveal">
+      <a href="#" class="page-num active">1</a>
+      <a href="#" class="page-num">2</a>
+      <a href="#" class="page-num">3</a>
+      <span style="display:flex;align-items:center;color:var(--text-light);">...</span>
+      <a href="#" class="page-num">Next ›</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">PT</div><div><span class="footer-brand-name">Prestige Textiles</span><span class="footer-brand-sub">Faisalabad, Pakistan</span></div></div><p>Your trusted textile sourcing and manufacturing partner.</p><div class="footer-contact-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="footer-contact-item">📞 +92 300 000 0000</div></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div></div></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><p>© 2026 Prestige Textiles. All rights reserved.</p></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

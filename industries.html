@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries We Serve | Prestige Textiles</title>
+  <meta name="description" content="Prestige Textiles provides specialized textile manufacturing and sourcing solutions for the hospitality, healthcare, retail, promotional, and corporate workwear industries.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .industry-hero-card { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-bottom:80px; }
+    .industry-hero-card.reverse { direction:rtl; }
+    .industry-hero-card.reverse > * { direction:ltr; }
+    .industry-image-wrap { position:relative; aspect-ratio:4/3; border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-lg); background:var(--grey-100); }
+    .industry-image-wrap img { width:100%; height:100%; object-fit:cover; }
+    .industry-image-wrap .emoji { display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:6rem; background:linear-gradient(135deg, var(--grey-100), var(--grey-200)); }
+    .industry-content h2 { font-size:2rem; color:var(--navy-800); margin-bottom:16px; }
+    .industry-content p { color:var(--text-light); line-height:1.7; margin-bottom:24px; font-size:1rem; }
+    .industry-features { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
+    .ind-feature { display:flex; align-items:flex-start; gap:12px; }
+    .ind-feature-icon { color:var(--gold-500); font-size:1.2rem; margin-top:2px; }
+    .ind-feature-text { font-size:0.9rem; font-weight:600; color:var(--navy-800); }
+    
+    @media (max-width: 768px) {
+      .industry-hero-card, .industry-hero-card.reverse { grid-template-columns:1fr; gap:32px; direction:ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><div class="top-bar-item">📞 +92 300 000 0000</div><div class="top-bar-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="top-bar-item">📍 Faisalabad, Pakistan</div></div><div class="top-bar-right"><div class="top-bar-social"><a href="#">in</a><a href="#">f</a></div></div></div></div></div>
+<nav class="navbar" id="navbar"><div class="container"><div class="navbar-inner"><a href="index.html" class="navbar-logo"><div class="navbar-logo-mark">PT</div><div class="navbar-logo-text"><span class="brand-name">Prestige Textiles</span><span class="brand-sub">Faisalabad, Pakistan</span></div></a><nav class="navbar-nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="products.html" class="nav-link">Products</a><a href="services.html" class="nav-link">Services</a><a href="industries.html" class="nav-link active">Industries</a><a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality.html" class="nav-link">Quality</a><a href="markets.html" class="nav-link">Markets</a><a href="blog.html" class="nav-link">Blog</a><a href="contact.html" class="nav-link">Contact</a></nav><div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></div></div></nav>
+<div class="mobile-menu" id="mobile-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="industries.html" class="nav-link">Industries</a><a href="contact.html" class="nav-link">Contact</a><a href="contact.html" class="btn btn-primary" style="margin-top:24px;display:flex;justify-content:center;">Get a Quote</a></div>
+
+<section class="page-hero"><div class="container"><div class="page-hero-content"><nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span style="color:rgba(255,255,255,0.8);">Industries</span></nav><span class="eyebrow">Tailored Solutions</span><h1 class="display-lg">Industries We Serve</h1><p>We understand that every sector has unique requirements for durability, design, and compliance. Discover our specialized textile solutions.</p></div></div></section>
+
+<section class="section bg-white">
+  <div class="container">
+    
+    <!-- Hospitality -->
+    <div class="industry-hero-card reveal" id="hospitality">
+      <div class="industry-image-wrap"><img src="images/product_hotel_linen.png" alt="Hospitality Linen" onerror="this.outerHTML='<div class=\'emoji\'>🏨</div>'"></div>
+      <div class="industry-content">
+        <span class="eyebrow">Hotels & Resorts</span>
+        <h2>Hospitality & Commercial Linen</h2>
+        <p>We supply 5-star quality bedding, bath towels, and restaurant linen designed to withstand the rigorous demands of commercial laundering while maintaining a luxurious guest experience.</p>
+        <div class="industry-features">
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">High-durability weaves</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Custom logo weaving</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Commercial wash friendly</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Consistent re-order supply</div></div>
+        </div>
+        <a href="products.html#hotel-linen" class="btn btn-outline-navy">View Hospitality Products</a>
+      </div>
+    </div>
+    
+    <!-- Healthcare -->
+    <div class="industry-hero-card reverse reveal" id="healthcare">
+      <div class="industry-image-wrap"><div class="emoji" style="background:linear-gradient(135deg, #e0f2f1, #b2dfdb); color:#00695c;">🏥</div></div>
+      <div class="industry-content">
+        <span class="eyebrow">Medical & Healthcare</span>
+        <h2>Hospital & Healthcare Linen</h2>
+        <p>Hygiene, comfort, and durability are paramount. We manufacture patient gowns, scrubs, and hospital bedding utilizing anti-microbial treatments and color-coded systems for easy ward management.</p>
+        <div class="industry-features">
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Anti-microbial finishes</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">High-temperature wash safe</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Color-coded sorting systems</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Breathable patient comfort</div></div>
+        </div>
+        <a href="products.html#hospital" class="btn btn-outline-navy">View Healthcare Products</a>
+      </div>
+    </div>
+    
+    <!-- Retail & E-commerce -->
+    <div class="industry-hero-card reveal" id="retail">
+      <div class="industry-image-wrap"><div class="emoji" style="background:linear-gradient(135deg, #fce4ec, #f8bbd0); color:#c2185b;">🛍️</div></div>
+      <div class="industry-content">
+        <span class="eyebrow">Brands & Importers</span>
+        <h2>Retail & E-Commerce</h2>
+        <p>From fast-fashion garments to premium home textiles, we provide complete OEM manufacturing. We handle everything from design sampling to retail-ready packaging, swing tags, and barcoding.</p>
+        <div class="industry-features">
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Trend-focused development</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Retail-ready packaging</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Custom branding & tags</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Flexible MOQs for testing</div></div>
+        </div>
+        <a href="products.html#private-label" class="btn btn-outline-navy">View Retail Services</a>
+      </div>
+    </div>
+    
+    <!-- Corporate & Promotional -->
+    <div class="industry-hero-card reverse reveal" id="corporate">
+      <div class="industry-image-wrap"><div class="emoji" style="background:linear-gradient(135deg, #e8eaf6, #c5cae9); color:#303f9f;">👔</div></div>
+      <div class="industry-content">
+        <span class="eyebrow">B2B & Events</span>
+        <h2>Corporate & Promotional</h2>
+        <p>High-volume manufacturing of promotional t-shirts, polo shirts, caps, and tote bags. We offer precision logo embroidery and screen printing, ensuring your brand is represented perfectly.</p>
+        <div class="industry-features">
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">High volume capacity</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Precision logo placement</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Multiple printing techniques</div></div>
+          <div class="ind-feature"><div class="ind-feature-icon">✓</div><div class="ind-feature-text">Budget-friendly options</div></div>
+        </div>
+        <a href="products.html#garments" class="btn btn-outline-navy">View Promotional Products</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner"><div class="container"><div class="cta-banner-inner reveal"><h2 class="display-md">Discuss Your Industry Needs</h2><p>Our sector experts understand your specific compliance and quality requirements.</p><div class="btn-group"><a href="contact.html" class="btn btn-primary btn-lg">📋 Get a Custom Quote</a></div></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">PT</div><div><span class="footer-brand-name">Prestige Textiles</span><span class="footer-brand-sub">Faisalabad, Pakistan</span></div></div><p>Your trusted textile sourcing and manufacturing partner.</p><div class="footer-contact-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="footer-contact-item">📞 +92 300 000 0000</div></div><div class="footer-col"><h5>Products</h5><ul><li><a href="products.html">Home Textiles</a></li><li><a href="products.html#garments">Garments</a></li><li><a href="products.html#private-label">Private Label</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h5>Newsletter</h5><form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div></div></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><p>© 2026 Prestige Textiles. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="contact.html">Contact</a></div></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

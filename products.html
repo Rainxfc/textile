@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Prestige Textiles — Home Textiles, Garments & Made-Ups from Pakistan</title>
+  <meta name="description" content="Browse Prestige Textiles' full product range: bedsheets, towels, bathrobes, hotel linen, hospital linen, garments, sportswear, and private label manufacturing from Faisalabad, Pakistan.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .filter-tabs { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px; }
+    .filter-btn { padding:10px 24px; border-radius:var(--radius-full); font-size:0.875rem; font-weight:600; border:2px solid var(--grey-200); color:var(--text-mid); transition:all var(--transition-base); cursor:pointer; background:var(--white); }
+    .filter-btn:hover,.filter-btn.active { background:var(--navy-800); border-color:var(--navy-800); color:var(--white); }
+    .products-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:28px; }
+    .prod-card { background:var(--white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-sm); border:1px solid var(--grey-100); transition:all var(--transition-base); }
+    .prod-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-xl); }
+    .prod-card-img { width:100%; aspect-ratio:4/3; object-fit:cover; background:var(--grey-100); display:flex; align-items:center; justify-content:center; font-size:5rem; }
+    .prod-card-img img { width:100%; height:100%; object-fit:cover; }
+    .prod-card-body { padding:24px; }
+    .prod-cat-badge { font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-500); background:var(--gold-100); padding:4px 10px; border-radius:var(--radius-full); display:inline-block; margin-bottom:10px; }
+    .prod-card-name { font-size:1.1rem; font-weight:700; color:var(--navy-800); margin-bottom:8px; }
+    .prod-card-desc { font-size:0.85rem; color:var(--text-light); line-height:1.6; margin-bottom:16px; }
+    .prod-specs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; }
+    .prod-spec { font-size:0.72rem; font-weight:600; color:var(--navy-700); background:var(--grey-100); padding:4px 10px; border-radius:var(--radius-full); }
+    .prod-card-footer { display:flex; gap:8px; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid var(--grey-100); }
+    .section-anchor { scroll-margin-top:100px; }
+    .cat-header { margin-bottom:40px; padding-bottom:20px; border-bottom:2px solid var(--grey-100); }
+    .cat-header h2 { color:var(--navy-800); margin-bottom:8px; }
+    .cat-header p { color:var(--text-light); }
+    .moq-banner { background:var(--navy-800); border-radius:var(--radius-lg); padding:32px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; margin-top:60px; }
+    .moq-banner h3 { color:var(--white); font-size:1.3rem; margin-bottom:8px; }
+    .moq-banner p { color:rgba(255,255,255,0.7); font-size:0.9rem; }
+  </style>
+</head>
+<body>
+<div class="top-bar"><div class="container"><div class="top-bar-inner"><div class="top-bar-left"><div class="top-bar-item">📞 +92 300 000 0000</div><div class="top-bar-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="top-bar-item">📍 Faisalabad, Pakistan</div></div><div class="top-bar-right"><div class="top-bar-social"><a href="#">in</a><a href="#">f</a></div></div></div></div></div>
+<nav class="navbar" id="navbar"><div class="container"><div class="navbar-inner"><a href="index.html" class="navbar-logo"><div class="navbar-logo-mark">PT</div><div class="navbar-logo-text"><span class="brand-name">Prestige Textiles</span><span class="brand-sub">Faisalabad, Pakistan</span></div></a><nav class="navbar-nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="products.html" class="nav-link active">Products</a><a href="services.html" class="nav-link">Services</a><a href="industries.html" class="nav-link">Industries</a><a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality.html" class="nav-link">Quality</a><a href="markets.html" class="nav-link">Markets</a><a href="blog.html" class="nav-link">Blog</a><a href="contact.html" class="nav-link">Contact</a></nav><div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></div></div></nav>
+<div class="mobile-menu" id="mobile-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="products.html" class="nav-link">Products</a><a href="services.html" class="nav-link">Services</a><a href="industries.html" class="nav-link">Industries</a><a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality.html" class="nav-link">Quality</a><a href="markets.html" class="nav-link">Markets</a><a href="blog.html" class="nav-link">Blog</a><a href="contact.html" class="nav-link">Contact</a><a href="contact.html" class="btn btn-primary" style="margin-top:24px;display:flex;justify-content:center;">Get a Quote</a></div>
+
+<section class="page-hero"><div class="container"><div class="page-hero-content"><nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span style="color:rgba(255,255,255,0.8);">Products</span></nav><span class="eyebrow">Our Product Range</span><h1 class="display-lg">Premium Textiles for Global Buyers</h1><p>From luxury hotel bedding to performance sportswear — we source and manufacture the full spectrum of textile products, fully customisable to your brand requirements.</p></div></div></section>
+
+<section class="section bg-white">
+  <div class="container">
+    <!-- Filter -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="home-textiles">Home Textiles</button>
+      <button class="filter-btn" data-filter="garments">Garments</button>
+      <button class="filter-btn" data-filter="hotel">Hotel & Hospitality</button>
+      <button class="filter-btn" data-filter="hospital">Hospital Linen</button>
+      <button class="filter-btn" data-filter="made-ups">Made-Ups & OEM</button>
+    </div>
+
+    <!-- HOME TEXTILES -->
+    <div class="cat-header section-anchor" id="home-textiles">
+      <h2 class="display-sm">🏠 Home Textiles</h2>
+      <p>Premium quality home linen for retail brands, importers, and wholesale distributors worldwide.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:60px;">
+      <div class="prod-card filterable-card reveal" data-category="home-textiles">
+        <div class="prod-card-img"><img src="images/product_bedsheets.png" alt="Luxury bedsheets"></div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Bedsheets & Bed Linen</h3>
+          <p class="prod-card-desc">Crisp, durable flat and fitted sheets in a full range of thread counts. Available in percale, sateen, and flannel weaves. Custom sizing, colours, and embroidery available.</p>
+          <div class="prod-specs"><span class="prod-spec">TC 200–1000</span><span class="prod-spec">100% Cotton</span><span class="prod-spec">Poly-Cotton</span><span class="prod-spec">Custom Sizes</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 200 pcs MOQ</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="home-textiles">
+        <div class="prod-card-img"><img src="images/product_towels.png" alt="Premium towels"></div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Towels & Bath Linen</h3>
+          <p class="prod-card-desc">Plush, absorbent bath towels, hand towels, and face cloths in 100% cotton terry. GSM range 300–900. Dobby and jacquard borders available.</p>
+          <div class="prod-specs"><span class="prod-spec">300–900 GSM</span><span class="prod-spec">100% Cotton</span><span class="prod-spec">Terry Loop</span><span class="prod-spec">Velour</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 300 pcs MOQ</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-2" data-category="home-textiles">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8f4f8,#d0e8f0);">🛁</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Bathrobes</h3>
+          <p class="prod-card-desc">Luxury terry and waffle bathrobes for hotels, spas, and retail brands. Shawl and kimono collar options. Embroidery and monogramming available.</p>
+          <div class="prod-specs"><span class="prod-spec">Terry</span><span class="prod-spec">Waffle</span><span class="prod-spec">Velour</span><span class="prod-spec">OEM Label</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 100 pcs MOQ</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal" data-category="home-textiles">
+        <div class="prod-card-img"><img src="images/product_kitchen_linen.png" alt="Kitchen linen" onerror="this.parentElement.innerHTML='🍽️'"></div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Kitchen Linen</h3>
+          <p class="prod-card-desc">Durable kitchen towels, aprons, oven mitts, and pot holders. Available in solid colours, stripes, and custom prints. Suitable for retail and food service.</p>
+          <div class="prod-specs"><span class="prod-spec">Cotton</span><span class="prod-spec">Linen Blend</span><span class="prod-spec">Custom Print</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 500 pcs MOQ</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="home-textiles">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f5f5f0,#ebe8e0);">🪡</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Comforters & Quilts</h3>
+          <p class="prod-card-desc">Premium filled comforters and quilts for bedding sets. Polyester and cotton fill options. Custom shell fabrics, colours, and stitch patterns.</p>
+          <div class="prod-specs"><span class="prod-spec">Polyester Fill</span><span class="prod-spec">Cotton Fill</span><span class="prod-spec">Box Stitch</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 200 pcs MOQ</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-2" data-category="home-textiles">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0f4f8,#dde8f4);">🛋️</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Home Textiles</span>
+          <h3 class="prod-card-name">Pillow Cases & Shams</h3>
+          <p class="prod-card-desc">Standard, king, and euro pillow cases and decorative shams. Envelope and zipper closure options. Matching bedding sets available.</p>
+          <div class="prod-specs"><span class="prod-spec">Standard</span><span class="prod-spec">King Size</span><span class="prod-spec">Euro Sham</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 300 pcs MOQ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLE LINEN -->
+    <div class="cat-header section-anchor" id="table">
+      <h2 class="display-sm">🍽️ Table Linen</h2>
+      <p>Restaurant, hotel, and retail table linen in premium cotton and linen blends.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:60px;">
+      <div class="prod-card filterable-card reveal" data-category="home-textiles">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fdfbf7,#f5f0e8);">🕯️</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Table Linen</span>
+          <h3 class="prod-card-name">Tablecloths & Table Runners</h3>
+          <p class="prod-card-desc">Elegant tablecloths in damask, satin, and plain weave. All standard sizes plus custom dimensions. Restaurant and banquet quality.</p>
+          <div class="prod-specs"><span class="prod-spec">Damask</span><span class="prod-spec">Satin</span><span class="prod-spec">Custom Size</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="home-textiles">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8f0f8,#eedde8);">🍷</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Table Linen</span>
+          <h3 class="prod-card-name">Napkins & Placemats</h3>
+          <p class="prod-card-desc">Dinner and cocktail napkins in cotton and cotton-polyester blends. Hemstitched and mitered corners. Bulk restaurant and hotel supply.</p>
+          <div class="prod-specs"><span class="prod-spec">45×45cm</span><span class="prod-spec">50×50cm</span><span class="prod-spec">Custom Size</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOTEL LINEN -->
+    <div class="cat-header section-anchor" id="hotel-linen">
+      <h2 class="display-sm">🏨 Hotel & Hospitality Linen</h2>
+      <p>5-star quality hotel linen for hotel groups, hospitality chains, and procurement agencies worldwide.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:60px;">
+      <div class="prod-card filterable-card reveal" data-category="hotel">
+        <div class="prod-card-img"><img src="images/product_hotel_linen.png" alt="Hotel linen" onerror="this.style.display='none'"></div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Hotel Linen</span>
+          <h3 class="prod-card-name">Hotel Bedding Sets</h3>
+          <p class="prod-card-desc">Complete hotel bedding programmes including sheets, pillowcases, duvet covers, and bed runners. Institutional durability with luxury feel.</p>
+          <div class="prod-specs"><span class="prod-spec">TC 300–600</span><span class="prod-spec">White/Ivory</span><span class="prod-spec">Custom Logo</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">Bulk supply</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="hotel">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f5f8fc,#dde8f5);">🏊</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Hotel Linen</span>
+          <h3 class="prod-card-name">Pool & Spa Towels</h3>
+          <p class="prod-card-desc">Heavy-weight pool towels, beach towels, and spa wraps. Velour face, jacquard borders. Available with hotel logo weaving or embroidery.</p>
+          <div class="prod-specs"><span class="prod-spec">500–700 GSM</span><span class="prod-spec">Velour Face</span><span class="prod-spec">Jacquard</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-2" data-category="hotel">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8f5f0,#f0e8d8);">🥂</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Hotel Linen</span>
+          <h3 class="prod-card-name">Restaurant & Banquet Linen</h3>
+          <p class="prod-card-desc">Full restaurant linen programmes: tablecloths, napkins, runners, and skirting. Custom colours and monogramming for hotel branding.</p>
+          <div class="prod-specs"><span class="prod-spec">Custom Colour</span><span class="prod-spec">Monogram</span><span class="prod-spec">All Sizes</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOSPITAL LINEN -->
+    <div class="cat-header section-anchor" id="hospital">
+      <h2 class="display-sm">🏥 Hospital & Medical Linen</h2>
+      <p>Durable, hygiene-focused linen for hospitals, clinics, and healthcare institutions.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:60px;">
+      <div class="prod-card filterable-card reveal" data-category="hospital">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0f8f8,#d8eeee);">🏥</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Hospital Linen</span>
+          <h3 class="prod-card-name">Hospital Bed Sheets & Pillowcases</h3>
+          <p class="prod-card-desc">Durable, easy-care cotton-polyester blend hospital sheets. Colour-coded for easy sorting. Anti-microbial treatment available. Meets healthcare hygiene standards.</p>
+          <div class="prod-specs"><span class="prod-spec">Poly-Cotton</span><span class="prod-spec">Anti-Microbial</span><span class="prod-spec">Colour-Coded</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="hospital">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8f8f0,#c8eedd);">🩺</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Hospital Linen</span>
+          <h3 class="prod-card-name">Patient Gowns & Scrubs</h3>
+          <p class="prod-card-desc">Comfortable, durable patient gowns and medical scrubs. Snap and tie closure options. Custom embroidery for hospital branding. Bulk institutional orders.</p>
+          <div class="prod-specs"><span class="prod-spec">Cotton Blend</span><span class="prod-spec">All Sizes</span><span class="prod-spec">Custom Print</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GARMENTS -->
+    <div class="cat-header section-anchor" id="garments">
+      <h2 class="display-sm">👔 Garments</h2>
+      <p>Custom-manufactured garments for retail brands, corporate buyers, promotional companies, and e-commerce businesses.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:60px;">
+      <div class="prod-card filterable-card reveal" data-category="garments">
+        <div class="prod-card-img"><img src="images/product_garments.png" alt="Garments"></div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Garments</span>
+          <h3 class="prod-card-name">T-Shirts & Polo Shirts</h3>
+          <p class="prod-card-desc">Premium quality t-shirts and polo shirts for retail, corporate, and promotional use. Screen print, embroidery, and DTG options. OEM labels and private label packaging.</p>
+          <div class="prod-specs"><span class="prod-spec">100% Cotton</span><span class="prod-spec">Pique Polo</span><span class="prod-spec">Custom Print</span><span class="prod-spec">OEM Label</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a><span class="body-sm text-muted">From 300 pcs/colour</span></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="garments">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0f2f8,#d8dcf0);">🧥</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Garments</span>
+          <h3 class="prod-card-name">Hoodies & Sweatshirts</h3>
+          <p class="prod-card-desc">Premium fleece hoodies and crewneck sweatshirts for retail and brand buyers. Pullover and zip-up styles. French terry and brushed fleece options.</p>
+          <div class="prod-specs"><span class="prod-spec">French Terry</span><span class="prod-spec">Brushed Fleece</span><span class="prod-spec">350 GSM</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-2" data-category="garments">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8f0f5,#f0dde8);">⚽</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Garments</span>
+          <h3 class="prod-card-name">Sportswear & Activewear</h3>
+          <p class="prod-card-desc">Performance sportswear including jerseys, shorts, tracksuits, and gym wear. Sublimation printing and moisture-wicking fabrics available.</p>
+          <div class="prod-specs"><span class="prod-spec">Polyester</span><span class="prod-spec">Sublimation</span><span class="prod-spec">Moisture Wick</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-3" data-category="garments">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0f5f0,#d8edd8);">🔧</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">Garments</span>
+          <h3 class="prod-card-name">Workwear & Uniforms</h3>
+          <p class="prod-card-desc">Durable corporate workwear and uniforms for hospitality, industrial, and office environments. Hi-vis options available. Custom branding and logo embroidery.</p>
+          <div class="prod-specs"><span class="prod-spec">Cotton/Poly</span><span class="prod-spec">Hi-Vis</span><span class="prod-spec">Logo Embroidery</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Request Sample</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MADE-UPS / OEM -->
+    <div class="cat-header section-anchor" id="private-label">
+      <h2 class="display-sm">🏷️ Private Label & OEM Manufacturing</h2>
+      <p>Full custom manufacturing — from concept and design to branded, packaged product ready for your shelves.</p>
+    </div>
+    <div class="products-grid" style="margin-bottom:40px;">
+      <div class="prod-card filterable-card reveal" data-category="made-ups">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0D1B3E,#1A3060);">🏷️</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">OEM Manufacturing</span>
+          <h3 class="prod-card-name">Private Label Products</h3>
+          <p class="prod-card-desc">Your brand, our manufacturing expertise. We produce any textile product under your label — including custom packaging, swing tags, and care labels.</p>
+          <div class="prod-specs"><span class="prod-spec">Custom Label</span><span class="prod-spec">Custom Pack</span><span class="prod-spec">Any Category</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Discuss Your Project</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-1" data-category="made-ups">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold-600),var(--gold-400));">✏️</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">OEM Manufacturing</span>
+          <h3 class="prod-card-name">Custom Design Development</h3>
+          <p class="prod-card-desc">Bring your design ideas to life. Our product development team works from sketches, tech packs, or samples to produce exactly what you envision.</p>
+          <div class="prod-specs"><span class="prod-spec">CAD Design</span><span class="prod-spec">Sampling</span><span class="prod-spec">Prototyping</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Start a Project</a></div>
+        </div>
+      </div>
+      <div class="prod-card filterable-card reveal reveal-delay-2" data-category="made-ups">
+        <div class="prod-card-img" style="height:210px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#2d5096,#1e3a72);">📦</div>
+        <div class="prod-card-body">
+          <span class="prod-cat-badge">OEM Manufacturing</span>
+          <h3 class="prod-card-name">Custom Packaging Solutions</h3>
+          <p class="prod-card-desc">Full packaging design and supply: polybags, box sets, retail packaging, header cards, and gift wrap. E-commerce and retail-ready solutions.</p>
+          <div class="prod-specs"><span class="prod-spec">Retail Pack</span><span class="prod-spec">Gift Box</span><span class="prod-spec">E-Com Ready</span></div>
+          <div class="prod-card-footer"><a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOQ Banner -->
+    <div class="moq-banner reveal">
+      <div>
+        <h3>Flexible Minimum Order Quantities</h3>
+        <p>We welcome both small test orders and large commercial shipments. Contact us to discuss your requirements.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-lg" style="flex-shrink:0;">Request a Quotation</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner"><div class="container"><div class="cta-banner-inner reveal"><h2 class="display-md">Can't Find What You Need?</h2><p>We source across the full textile spectrum. Tell us your product requirements and we'll find the right solution.</p><div class="btn-group"><a href="contact.html" class="btn btn-primary btn-lg">📋 Request a Custom Quote</a><a href="https://wa.me/923000000000" class="btn btn-outline btn-lg" target="_blank">📞 WhatsApp Us</a></div></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">PT</div><div><span class="footer-brand-name">Prestige Textiles</span><span class="footer-brand-sub">Faisalabad, Pakistan</span></div></div><p>Your trusted textile sourcing and manufacturing partner.</p><div class="footer-contact-item">✉ <a href="mailto:info@prestigetextiles.com">info@prestigetextiles.com</a></div><div class="footer-contact-item">📞 +92 300 000 0000</div><div class="footer-contact-item">📍 Faisalabad, Pakistan</div></div><div class="footer-col"><h5>Products</h5><ul><li><a href="#home-textiles">Home Textiles</a></li><li><a href="#hotel-linen">Hotel Linen</a></li><li><a href="#hospital">Hospital Linen</a></li><li><a href="#garments">Garments</a></li><li><a href="#private-label">Private Label</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h5>Newsletter</h5><form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div></div></div></div><div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><p>© 2026 Prestige Textiles. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="contact.html">Contact</a></div></div></div></div></footer>
+
+<a href="https://wa.me/923000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><div class="whatsapp-pulse"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<button class="back-to-top" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
+<script src="js/main.js"></script>
+</body>
+</html>
